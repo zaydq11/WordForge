@@ -42,9 +42,11 @@ This line creates a room but doesn’t connect it to any other rooms yet.
 
 
 Step 3: Set Exits for Rooms
+
 Next, set the directions that connect rooms, which defines how players move between them. For example, to connect the Kitchen to the Entrance Hall and make it accessible:
 
 room1.SetExit("east", room4); // Adds an east exit from Entrance Hall to Kitchen.
+
 room4.SetExit("west", room1); // Adds a west exit from Kitchen back to Entrance Hall.
 
 These lines allow the player to travel east from the Entrance Hall to the Kitchen and west from the Kitchen back to the Entrance Hall.
